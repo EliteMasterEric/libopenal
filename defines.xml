@@ -3,4 +3,5 @@
     <compilerflag value="-DNATIVE_TOOLKIT_OPENAL"/>
     <compilerflag value="-DAL_LIBTYPE_STATIC=1" if="native_toolkit_openal_static" />
 
+    <compilerflag value="-DALSOFT_BACKEND_SDL2=FALSE"/>
 </xml>

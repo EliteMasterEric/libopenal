@@ -70,19 +70,19 @@
         <file name="${NATIVE_TOOLKIT_PATH}/openal/OpenAL32/event.c"/>
         <file name="${NATIVE_TOOLKIT_PATH}/openal/OpenAL32/sample_cvt.c"/>
 
+        <!--
+            Disabled for incompatibility with SDL3.
         <section if="NATIVE_TOOLKIT_HAVE_SDL">
-
             <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/sdl/include/" />
             <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/sdl/include/configs/default/" unless="windows || mac || linux || rpi"/>
             <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/sdl/include/configs/linux/" if="linux" unless="rpi"/>
             <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/sdl/include/configs/windows/" if="windows"/>
             <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/sdl/include/configs/mac/" if="mac"/>
             <compilerflag value="-I${NATIVE_TOOLKIT_PATH}/sdl/include/configs/rpi/" if="rpi"/>
-
             <compilerflag value="-DHAVE_SDL2" />
             <file name="${NATIVE_TOOLKIT_PATH}/openal/Alc/backends/sdl2.c" />
-
         </section>
+        -->
 
         <section if="linux">
 
